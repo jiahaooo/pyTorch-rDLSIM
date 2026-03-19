@@ -7,8 +7,14 @@ from utils.tools import mkdir
 
 def main1():
 
+    # # LifeAct
+    # biosr_path = r'K:\BioSR-DataSet\F-actin'
+    # output_path = r'K:\data_LifeAct_bioSR_copy'
+    # output_hsnr_name = 'TIRFSIM488_GTRawData.mrc'
+    # output_lsnr_name = 'TIRFSIM488_NoisyRawData.mrc'
+    
     # MAP7
-    biosr_path = r'E:\Common\BioSR-DataSet\Microtubules_SIRecon'
+    biosr_path = r'K:\BioSR-DataSet\Microtubules'
     output_path = r'K:\data_MAP7_bioSR_copy'
     output_hsnr_name = 'GISIM488_GTRawData.mrc'
     output_lsnr_name = 'GISIM488_NoisyRawData.mrc'
