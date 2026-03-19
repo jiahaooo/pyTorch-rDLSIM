@@ -6,17 +6,6 @@ from utils.tools import mkdir
 
 
 def main1():
-    # # LifeAct
-    # biosr_path = r'E:\Common\BioSR-DataSet\F-actin_SIRecon'
-    # output_path = r'K:\data_LifeAct_bioSR_copy'
-    # output_hsnr_name = 'TIRFSIM488_GTRawData.mrc'
-    # output_lsnr_name = 'TIRFSIM488_NoisyRawData.mrc'
-
-    # # Clathrin
-    # biosr_path = r'E:\Common\BioSR-DataSet\CCPs_SIRecon'
-    # output_path = r'K:\data_Clathrin_bioSR_copy'
-    # output_hsnr_name = 'TIRFSIM488_GTRawData.mrc'
-    # output_lsnr_name = 'TIRFSIM488_NoisyRawData.mrc'
 
     # MAP7
     biosr_path = r'E:\Common\BioSR-DataSet\Microtubules_SIRecon'
