@@ -2,32 +2,6 @@ import torch.nn as nn
 import torch
 from rDL_model.base_rcan import RCAN_Group, CALayer
 import time
-# -------------------------------------------------------------------------
-#       rDL (Qiao, 2021)
-# > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
-# Math:
-#
-# (0) SIM Imaging Model:
-#
-#                 y = Ax
-#
-# (1) Train a super-resolution network (marked as f_1) mapping raw data (y) into GT (x)
-#
-#                 f_1 = argmin_f || y - f(x) ||_1
-#
-# (2) Get predicted SR images and use the imaging model:
-#
-#                 x_{pred} = f_1(y)
-#    
-#                 y_{simu} = Ax_{pred}
-# 
-# (3) Two-stream Raw Denoise (per three channel)
-#
-#                 y_{pred} = f_4(f_2(y), f_3(y_{simu}))
-#
-# < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <
-# -------------------------------------------------------------------------
-
 
 class RDL_RCAN_Denoiser(nn.Module):
     # paras: 5.186755 M
