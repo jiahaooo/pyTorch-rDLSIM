@@ -1,0 +1,44 @@
+{
+  // task
+  "data": "2d-sim"
+  , "model": "reconstruction"
+  , "supervise": "full-supervised"
+
+  // dataset
+  , "dataset_root": "K:\\data_Lifeact_COS7_mEmerald_bioSR_hsnr\\DeepLearningDataset_211222-153904\\"
+
+  // network
+  , "net_G": "rcan"
+  , "net_G_para1": 4
+  , "net_G_para2": 4
+
+  // training-init
+  , "pretrained_netG": null      // path of pretrained model
+  , "init_type": "kaiming_normal"         // "orthogonal" | "kaiming_normal" | "kaiming_uniform" | "xavier_normal" | "xavier_uniform"
+  , "init_gain": 0.2
+
+  // training-dataset
+  , "dataloader_num_workers": 3
+  , "dataloader_batch_size": 3
+  , "in_patch_size": 128
+  , "dataaug_random_angle_rotate": false
+  , "read_whole_dataset_toCPU": true
+  , "read_whole_dataset_toGPU": true
+
+  // training-optimization
+  , "G_lossfn_type": "mae"
+  , "G_lossfn_cyclerate": 0.0
+  , "G_optimizer_type": "adamw"
+  , "G_optimizer_lr": 1e-4
+  , "G_optimizer_weight_decay": 0.0
+  , "G_scheduler_type": "CosineAnnealingLR"
+  , "G_scheduler_IterNum": 100000
+  , "G_scheduler_MinLR": 1e-6
+
+  // checkpoint
+  , "num_iter_interval_val": 2000         // for val
+  , "num_iter_interval_save": 1000000000    // for saving model
+  , "num_iter_interval_print": 100          // for print
+  , "save_all_val_images": false
+  , "sleep_second": 0
+}

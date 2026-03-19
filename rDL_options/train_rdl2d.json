@@ -1,0 +1,59 @@
+{
+  // task
+  "data": "2d-sim"
+  , "model": "rdl"
+  , "need_blur": true
+  , "supervise": "full-supervised"
+
+  // dataset
+  , "dataset_root": "M:\\HKM_EXP\\20220509_HKM_LJH_Training_561_DST_220511-230000\\"
+
+  // network
+  , "net_G": "prcan"
+  , "net_G_para1": 5
+  , "net_G_para2": 5
+  , "net_P": "rcan"
+  , "net_P_para1": 4
+  , "net_P_para2": 4
+
+  // training-init
+  , "pretrained_netG": null
+  , "pretrained_netP": null
+  , "init_type": "kaiming_normal"         // "orthogonal" | "kaiming_normal" | "kaiming_uniform" | "xavier_normal" | "xavier_uniform"
+  , "init_gain": 0.2
+
+  // training-dataset
+  , "dataloader_num_workers": 1
+  , "dataloader_batch_size": 1
+  , "rdl_train_dataType": "perOri"
+  , "rdl_train_subBatch": 3
+  , "in_patch_size": 128
+  , "dataaug_random_angle_rotate": false
+  , "read_whole_dataset_toCPU": true
+  , "read_whole_dataset_toGPU": true
+
+  // training-optimization
+  , "G_lossfn_type": "mae"   // mae | mse | mae-ssim | mse-ssim | mae-msssim | mse-msssim
+  , "G_optimizer_type": "adamw"
+  , "G_optimizer_lr": 1e-4
+  , "G_optimizer_weight_decay": 0.0
+  , "G_scheduler_type": "CosineAnnealingLR"
+  , "G_scheduler_IterNum": 300000
+  , "G_scheduler_MinLR": 1e-6
+
+  , "P_pretrain_iternum": 0          // init iter | 0 means using pre-trained RCAN
+  , "P_lossfn_type": "mae"   // mae | mse | mae-ssim | mse-ssim | mae-msssim | mse-msssim
+  , "P_optimizer_type": "adamw"
+  , "P_optimizer_lr": 1e-4
+  , "P_optimizer_weight_decay": 0.0
+  , "P_scheduler_type": "CosineAnnealingLR"
+  , "P_scheduler_IterNum": 0 // 等于P_pretrain_iternum
+  , "P_scheduler_MinLR": 1e-6
+
+  // checkpoint
+  , "num_iter_interval_val": 2000            // for val
+  , "num_iter_interval_save": 1000000000000   // for saving model
+  , "num_iter_interval_print": 100           // for print
+  , "save_all_val_images": false
+  , "sleep_second": 0
+}
