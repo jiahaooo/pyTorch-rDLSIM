@@ -18,24 +18,12 @@ def main():
     # user_defined_longexp_name = ['TIRFSIM488_GTRawData.mrc']
     # user_defined_shortexp_name = ['TIRFSIM488_NoisyRawData.mrc']
     # json_file = 'biosr_tirf_488.json'
-
-    # Clathrin
-    path = r'K:\data_Clathrin_bioSR_copy'
-    user_defined_longexp_name = ['TIRFSIM488_GTRawData.mrc']
-    user_defined_shortexp_name = ['TIRFSIM488_NoisyRawData.mrc']
-    json_file = 'biosr_tirf_488.json'
-
-    # # MAP7
-    # path = r'K:\data_MAP7_bioSR_copy'
-    # user_defined_longexp_name = ['GISIM488_GTRawData.mrc']
-    # user_defined_shortexp_name = ['GISIM488_NoisyRawData.mrc']
-    # json_file = 'biosr_lownagi_488.json'
-
-    # # KDEL
-    # path = r'K:\data_KDEL_bioSR_copy'
-    # user_defined_longexp_name = ['GISIM488_GTRawData.mrc']
-    # user_defined_shortexp_name = ['GISIM488_NoisyRawData.mrc']
-    # json_file = 'biosr_lownagi_488.json'
+    
+    # MAP7
+    path = r'K:\data_MAP7_bioSR_copy'
+    user_defined_longexp_name = ['GISIM488_GTRawData.mrc']
+    user_defined_shortexp_name = ['GISIM488_NoisyRawData.mrc']
+    json_file = 'biosr_lownagi_488.json'
 
     found_longexp_files = []
     found_shortexp_files = []
