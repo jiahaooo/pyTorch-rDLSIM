@@ -9,10 +9,8 @@ from rDL_data.common import get_npys_paths, read_npy_and_check, dictsingle2tenso
     rot_datadict_para, get_dataset, get_datadict_from_datarootdict, \
     single2tensor
 
-# ALLOW_NUM = 1000
-ALLOW_NUM = 500
-
-
+ALLOW_NUM = 1000
+# ALLOW_NUM = 500
 # ALLOW_NUM = 200
 
 
