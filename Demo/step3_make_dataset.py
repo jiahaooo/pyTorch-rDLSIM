@@ -61,20 +61,8 @@ def main():
     # phase_name = 'TIRFSIM488_GTRawData_phase.npy'
     # json_name = 'TIRFSIM488_GTRawData.json'
 
-    # # MAP7
-    # dataset_folder = r'K:\data_MAP7_bioSR_copy'
-    # min_allowed_photon = 25
-    # max_allowed_photon = 65535  # raw
-    # gt_raw_name = 'GISIM488_GTRawData.mrc'
-    # noisy_raw_name = 'GISIM488_NoisyRawData.mrc'
-    # gt_sim_name = 'GISIM488_GTRawData_SIM.mrc'
-    # noisy_sim_name = 'GISIM488_NoisyRawData_SIM.mrc'
-    # k0_name = 'GISIM488_GTRawData_k0.npy'
-    # phase_name = 'GISIM488_GTRawData_phase.npy'
-    # json_name = 'GISIM488_GTRawData.json'
-
-    # KDEL
-    dataset_folder = r'K:\data_KDEL_bioSR_copy'
+    # MAP7
+    dataset_folder = r'K:\data_MAP7_bioSR_copy'
     min_allowed_photon = 25
     max_allowed_photon = 65535  # raw
     gt_raw_name = 'GISIM488_GTRawData.mrc'
@@ -84,6 +72,18 @@ def main():
     k0_name = 'GISIM488_GTRawData_k0.npy'
     phase_name = 'GISIM488_GTRawData_phase.npy'
     json_name = 'GISIM488_GTRawData.json'
+
+    # # KDEL
+    # dataset_folder = r'K:\data_KDEL_bioSR_copy'
+    # min_allowed_photon = 25
+    # max_allowed_photon = 65535  # raw
+    # gt_raw_name = 'GISIM488_GTRawData.mrc'
+    # noisy_raw_name = 'GISIM488_NoisyRawData.mrc'
+    # gt_sim_name = 'GISIM488_GTRawData_SIM.mrc'
+    # noisy_sim_name = 'GISIM488_NoisyRawData_SIM.mrc'
+    # k0_name = 'GISIM488_GTRawData_k0.npy'
+    # phase_name = 'GISIM488_GTRawData_phase.npy'
+    # json_name = 'GISIM488_GTRawData.json'
 
 
     # ----------------------------------------
